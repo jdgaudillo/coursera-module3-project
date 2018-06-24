@@ -10,4 +10,4 @@ The `run_analysis.R` does the following:
 6. Creates a tidy dataset that consists of the average (mean) value of each
    variable for each subject and activity pair.
 
-The output of the script is stored in `tidy.txt`
+The output of the script is stored in `cleaned-dataset.txt`
