@@ -7,8 +7,8 @@ download.file(zipUrl, file, method='curl')
 dataset <- unzip(file)
 
 # Load activity labels and features
-activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt")
-activityLabels[,2] <- as.character(activityLabels[,2])
+actLabels <- read.table("UCI HAR Dataset/activity_labels.txt")
+actLabels[,2] <- as.character(actLabels[,2])
 features <- read.table("UCI HAR Dataset/features.txt")
 features[,2] <- as.character(features[,2])
 
@@ -36,10 +36,10 @@ data <- rbind(train, test)
 colnames(data) <- c("subject", "activity", selectedFeatures.names)
 
 # turn activities & subjects into factors
-data$activity <- factor(data$activity, levels = activityLabels[,1], labels = activityLabels[,2])
+data$activity <- factor(data$activity, levels = actLabels[,1], labels = actLabels[,2])
 data$subject <- as.factor(data$subject)
 
 data.melted <- melt(data, id = c("subject", "activity"))
 data.mean <- dcast(data.melted, subject + activity ~ variable, mean)
 
-write.table(data.mean, "tidy.txt", row.names = FALSE, quote = FALSE)
+write.table(data.mean, "cleand-dataset.txt", row.names = FALSE, quote = FALSE)
