@@ -1,5 +1,5 @@
 # Coursera Module 3 Project Code Book
-This is a summary of the `>tidy.txt` dataset
+This is a summary of the `tidy.txt` dataset
 
 
 ## Identifiers
