@@ -1,12 +1,12 @@
-#Coursera Module 3 Project Code Book
+# Coursera Module 3 Project Code Book
 This is a summary of the `>tidy.txt` dataset
 
 
-##Identifiers
+## Identifiers
 * `subject`- ID of the test subject
 * `activity` - Label of activity performed when the measurements are performed
 
-##Activity Labels
+## Activity Labels
 * `WALKING` (value: `1`): subject was walking during the test
 * `WALKING_UPSTAIRS` (value: `2`): subject was walking up a staircase during the test
 * `WALKING_DOWNSTAIRS` (value: `3`): subject was walking down a staircase during the test
@@ -14,7 +14,7 @@ This is a summary of the `>tidy.txt` dataset
 * `STANDING` (value: `5`): subject was standing during the test
 * `LAYING` (value: `6`): subject was laying down during the test
 
-##Variables
+## Variables
 * `tBodyAccMeanX`
 * `tBodyAccMeanY`
 * `tBodyAccMeanZ`
