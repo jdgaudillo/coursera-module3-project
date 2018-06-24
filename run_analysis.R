@@ -12,7 +12,7 @@ activityLabels[,2] <- as.character(activityLabels[,2])
 features <- read.table("UCI HAR Dataset/features.txt")
 features[,2] <- as.character(features[,2])
 
-# Select features
+# Select measurements
 selectedFeatures <- grep(".*mean.*|.*std.*", features[,2])
 selectedFeatures.names <- features[selectedFeatures,2]
 selectedFeatures.names = gsub('-mean', 'Mean', selectedFeatures.names)
